@@ -1,4 +1,4 @@
 module.exports = {
 	sessionSecret: 'developmentSessionSecret',
-	dbConnection: 'mongodb://localhost/mean'
+	dbConnection: 'mongodb://localhost/test'
 };

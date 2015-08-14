@@ -2,8 +2,13 @@ var users = require('../../app/controllers/user.server.controller');
 
 module.exports = function(app){
 	app.route('/users')
-	.post(users.create)
-	.get(function(req, res, next){
-		res.send('Galing sa dodo ng cow 2');
-	});
+		.post(users.create)
+		.get(users.list);
+		
+	app.route('/users/:userId')
+		.get(users.read)
+		.put(users.update)
+		.delete(users.delete);
+		
+	app.param('userId', users.userByID);
 };
