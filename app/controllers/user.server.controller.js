@@ -14,3 +14,7 @@ exports.create = function(req, res, next)
 		}
 	});
 };
+
+exports.list = function(req, res, next){
+	
+};
