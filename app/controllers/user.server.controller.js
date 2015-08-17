@@ -1,4 +1,4 @@
-var User = require('mongoose').model('user1');
+var User = require('mongoose').model('user');
 
 exports.read = function(req, res){
 	res.json(req.user);
