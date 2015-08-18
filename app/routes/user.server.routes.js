@@ -1,14 +1,14 @@
-var users = require('../../app/controllers/user.server.controller');
+var usersController = require('../controllers/user.server.controller');
 
 module.exports = function(app){
 	app.route('/users')
-		.post(users.create)
-		.get(users.list);
+		.post(usersController.create)
+		.get(usersController.list);
 		
 	app.route('/users/:userId')
-		.get(users.read)
-		.put(users.update)
-		.delete(users.delete);
+		.get(usersController.read)
+		.put(usersController.update)
+		.delete(usersController.delete);
 		
-	app.param('userId', users.userByID);
+	app.param('userId', usersController.userByID);
 };
