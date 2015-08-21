@@ -30,6 +30,16 @@ module.exports = function(app){
 		successRedirect: '/'
 	}));
 	
+	// twitter
+	app.get('/auth/twitter', passport.authenticate('twitter',{
+		failureRedirect: '/signin'
+	}));
+	
+	app.get('/auth/twitter/callback', passport.authenticate('twitter',{
+		failureRedirect: '/signin',
+		successRedirect: '/'
+	}));
+	
 	// users	
 	app.route('/users')
 		.post(usersController.create)

@@ -8,5 +8,5 @@ exports.render = function(req, res)
 	
 	// NOTE: the value of req.user differentiates depending on the passport strategy
 	
-	res.render('index', {title: 'Hello World', userFullName: req.user ? req.user.providerData.name : ''});
+	res.render('index', {title: 'Hello World', userFullName: req.user ? req.user.username : ''});
 };
