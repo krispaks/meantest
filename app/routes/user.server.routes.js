@@ -24,17 +24,14 @@ module.exports = function(app){
 		failureRedirect: '/signin'
 	}));
 	
-	/*app.get('/auth/facebook/callback', passport.authenticate('facebook',{
+	app.get('/auth/facebook/callback', passport.authenticate('facebook',{
 		scope: [ 'email' ],
 		failureRedirect: '/signin',
 		successRedirect: '/'
-	}), function(req, res){
-		console.log('Redirect TO: ' + JSON.stringify(req));
-		console.log('Redirect TO: ' + JSON.stringify(res));
-	});*/
+	}));
 	
 	// NOTE: problem with current facebook process is when used with routing it adds #_=_ and it messes things up. need to be resolved.
-	app.get('/auth/facebook/callback', function(req, res, next) {
+	/*app.get('/auth/facebook/callback', function(req, res, next) {
 		passport.authenticate('facebook', function(err, user, info) {
 			if (err) { 
 				return next(err); 
@@ -42,9 +39,9 @@ module.exports = function(app){
 			if (!user) { 
 				return res.redirect('/login'); 
 			}
-			res.redirect('/');
+			res.redirect('/#!/');
 		})(req, res, next);
-	});
+	});*/
 	
 	// twitter
 	app.get('/auth/twitter', passport.authenticate('twitter',{
