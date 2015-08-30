@@ -19,7 +19,7 @@ var ArticleSchema = new Schema({
 	},
 	creator: {
 		type: Schema.ObjectId,
-		ref: 'User'
+		ref: 'user'
 	}
 });
 
