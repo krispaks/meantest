@@ -71,7 +71,7 @@ exports.update = function(req, res){
 	var article = req.article;
 	
 	article.title = req.body.title;
-	article.content = req.bod.content;
+	article.content = req.body.content;
 	
 	article.save(function(err){
 		if(err){
