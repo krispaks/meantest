@@ -1,9 +1,5 @@
-'use strict'
+define(['angular','angularRoute', 'angularResource'], function(angular){
+	'use strict'
+	return angular.module('appLib', ['ngResource','ngRoute']);
+});
 
-requirejs(['angular', 'angularRoute', 'angularResource', function(angular, angularRoute, angularResource){
-	return {
-		angular: angular,
-		angularRoute: angularRoute,
-		angularResource: angularResource
-	};
-}]);

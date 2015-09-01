@@ -6,7 +6,7 @@
 	};
 }]);*/
 
-define(['angular'], function(angular, users){
+define(['angular'], function(angular){
 	'use strict';
 	
 	return angular.module('users').factory('Authentication', [function(){

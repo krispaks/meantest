@@ -5,7 +5,8 @@ requirejs.config({
 		angular: '/lib/angular/angular',
 		angularRoute: '/lib/angular-route/angular-route',
 		angularResource: '/lib/angular-resource/angular-resource',
-		user: '/user/'
+		user: '/user',
+		articles: '/articles'
 	},
 	shim: {
 		'angular': { 'exports': 'angular' },

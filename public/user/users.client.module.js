@@ -1,5 +1,3 @@
-//angular.module('users', []);	
-
 define(['angular'], function(angular){
 	'use strict';
 	
