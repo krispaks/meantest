@@ -4,9 +4,7 @@ requirejs.config({
 	paths: {
 		angular: '/lib/angular/angular',
 		angularRoute: '/lib/angular-route/angular-route',
-		angularResource: '/lib/angular-resource/angular-resource',
-		user: '/user',
-		articles: '/articles'
+		angularResource: '/lib/angular-resource/angular-resource'
 	},
 	shim: {
 		'angular': { 'exports': 'angular' },

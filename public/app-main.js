@@ -1,5 +1,5 @@
 requirejs(['require-config'], function(){
-	requirejs(['angular','app-lib', 'app-features'], function(){
+	requirejs(['angular','app-lib', 'app-features'], function(angular){
 		
 	var mainApplicationModuleName = "mean";
 			
@@ -20,10 +20,3 @@ requirejs(['require-config'], function(){
 	return mainAplicationModule;
 	});
 });
-
-/*requirejs(['require-config'], function(){
-	//requirejs(['app-lib','app-features','app-module'], function(appLib, appFeatures, appModule){
-	requirejs(['app-lib', 'app-features'], function(appLib, appFeatures){
-		
-	});
-});*/
