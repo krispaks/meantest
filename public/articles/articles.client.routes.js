@@ -1,7 +1,7 @@
 define(['angular'], function(angular){
 	'use strict';
 	
-	return angular.module('articles').config(['$routeProvider', function($routeProvider){
+	var articleModule = angular.module('articles').config(['$routeProvider', function($routeProvider){
 		$routeProvider
 		.when('/articles', {
 			templateUrl: '/articles/views/list-article.client.view.html'
@@ -16,4 +16,6 @@ define(['angular'], function(angular){
 			templateUrl: '/articles/views/edit-article.client.view.html'
 		})
 	}]);	
+	
+	return articleModule;
 });
