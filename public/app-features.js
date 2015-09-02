@@ -1,8 +1,11 @@
-define(['require', 'angular'
+define(['require'
+	, 'angular',
 	,'user/users.client.module'
 	,'articles/articles.client.module'], 
 	function(requirejs, angular){
 		'use strict';
+		
+		var appFeatureModule = angular.module('appFeatures', ['ngRoute','ngResource', 'users', 'articles']);
 		
 		requirejs(['user/authentication.client.services'
 			, 'articles/articles.client.routes'
@@ -11,5 +14,5 @@ define(['require', 'angular'
 			
 		});
 		
-		return angular.module('appFeatures', ['users', 'articles']);
+		return appFeatureModule;
 });

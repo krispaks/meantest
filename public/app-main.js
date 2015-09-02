@@ -3,7 +3,7 @@ requirejs(['require-config'], function(){
 		
 	var mainApplicationModuleName = "mean";
 			
-	var mainAplicationModule = angular.module(mainApplicationModuleName, ['appLib', 'appFeatures']);		
+	var mainAplicationModule = angular.module(mainApplicationModuleName, ['appLib']);		
 	
 	mainAplicationModule.config(['$locationProvider', function($locationProvider){
 		$locationProvider.hashPrefix('!');
