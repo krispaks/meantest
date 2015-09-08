@@ -25,11 +25,7 @@ define(['require'
 			, 'articles/articles.client.controller'], 
 			function(){
 				return angular.module('appFeatures', ['users', 'articles']);
-		});*/
-		
-		//var appFeatureModule = angular.module('appFeatures', ['ngRoute','ngResource', 'users', 'articles']);		
-		
-		//return appFeatureModule;
-		
+		});*/	
+				
 		return angular.module('appFeatures', ['users', 'articles']);
 });
